@@ -1,0 +1,32 @@
+<head>
+  <title>Add Message-Bulletin</title>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <!-- Creating the navigation bar -->
+   <nav>
+      <div class="wow">
+       <div class="navbar">
+        <div>
+          <img id="photo" src="../img/st.png" alt="ST">
+        </div>
+        <div id="navopt">
+          <a href="#">Add Mesages</a>
+          <a href="vmes" id="navopt1">View Messages</a>
+        </div>
+      </div>
+     </div>
+    </nav>
+    <!-- Creating the form  -->
+   <div class="table">
+    <form method="post">
+      <p id="ptitle">Title</p>
+      <input type="text" id="title" placeholder="Write something.." required maxlength="20" name="title" autocomplete="off">
+      <p id="pmessage">Message</p>
+      <textarea rows="5" columns="10" type="text" id="textinput"  required placeholder="Write something.."  maxlength="1000" name="textinput" autocomplete="off"></textarea>
+      <input type="submit" id="button" value="Submit">
+      <!-- <button id="button" type="button">Click Me!</button> -->
+    </form>
+   </div>
+</body>

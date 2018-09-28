@@ -1,0 +1,32 @@
+<head>
+  <title>View Message-Bulletin</title>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+   <nav>
+      <div class="wow">
+       <div class="navbar">
+        <div>
+          <img id="photo" src="../img/st.png" alt="ST">
+        </div>
+        <div id="navopt">
+          <a href="/">Add Mesages</a>
+          <a href="#" id="navopt1">View Messages</a>
+        </div>
+      </div>
+     </div>
+    </nav>
+    <div class="result">
+      <% for(let i=0;i<data.length;i++){%>
+      <div id="insider">
+        <%=data[i].title %>
+        <br>
+        <br>
+        <%=data[i].body %>
+        <br>
+      </div>
+        <div id="space"></div>
+      <%}%>
+    </div>
+</body>
